@@ -10,16 +10,16 @@
     <title>Sunset Hotel | Hotel Premium HTML Template</title>
 
     <!-- CSS Plugins -->
-    <link href="{{ asset('public/assets/plugins/lightbox/dist/css/lightbox.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/assets/plugins/ionicons/css/ionicons.min.css') }}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/assets/plugins/owl-carousel/dist/assets/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/plugins/owl-carousel/dist/assets/owl.theme.default.min.css') }}">
+    <link href="{{ asset('assets/plugins/lightbox/dist/css/lightbox.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/plugins/ionicons/css/ionicons.min.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/plugins/owl-carousel/dist/assets/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/plugins/owl-carousel/dist/assets/owl.theme.default.min.css') }}">
 
     <!-- CSS Global -->
     <!-- Revolution Slider -->
-    <link rel="stylesheet" href="{{ asset('public/plugins/rs-plugin-5.3.1/css/settings.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/rs-plugin-5.3.1/css/settings.css') }}">
     <!--build:css assets/css/theme.min.css-->
-    <link rel="stylesheet" href="{{ asset('public/assets/css/theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/theme.css') }}">
     <!--endbuild-->
 
 </head>
@@ -162,16 +162,16 @@
                             <div id="rev_slider_1_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8">
                                 <ul>
                                     <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                                        <img src="{{ asset('public/content/model2/images/model2-slider-slide1.jpg')}}" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                                        <img src="{{ asset('content/model2/images/model2-slider-slide1.jpg')}}" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg" data-no-retina>
                                     </li>
                                     <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                                        <img src="{{ asset('public/content/model2/images/model2-slider-slide3.jpg')}}" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="10 20" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                                        <img src="{{ asset('content/model2/images/model2-slider-slide3.jpg')}}" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="10 20" data-bgparallax="4" class="rev-slidebg" data-no-retina>
                                     </li>
                                     <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                                        <img src="{{ asset('public/content/model2/images/model2-slider-slide2.jpg')}}" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                                        <img src="{{ asset('content/model2/images/model2-slider-slide2.jpg')}}" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="4" class="rev-slidebg" data-no-retina>
                                     </li>
                                     <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeIn" data-easeout="Power3.easeOut" data-masterspeed="5" data-delay="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                                        <img src="{{ asset('public/content/model2/images/model2-slider-slide4.jpg')}}" data-bgposition="center top" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg" data-no-retina>
+                                        <img src="{{ asset('content/model2/images/model2-slider-slide4.jpg')}}" data-bgposition="center top" data-kenburns="on" data-duration="5000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 -40" data-bgparallax="4" class="rev-slidebg" data-no-retina>
                                     </li>
                                 </ul>
                             </div>
@@ -303,7 +303,7 @@
                 <div class="section_about__content">
                     <div class="col-md-6">
                         <div class="about__pic">
-                            <img src="{{ asset('public/assets/img/about_img.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/about_img.jpg') }}" class="img-responsive" alt="...">
                         </div> <!-- / .about__pic -->
                     </div>
                     <div class="col-md-6">
@@ -341,7 +341,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <figure class="best-rooms__item">
-                            <img src="{{ asset('public/assets/img/single_room.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/single_room.jpg') }}" class="img-responsive" alt="...">
                             <figcaption>
                                 <h3>Single room</h3>
                                 <div class="item__price">
@@ -354,7 +354,7 @@
                     </div>
                     <div class="col-sm-6">
                         <figure class="best-rooms__item">
-                            <img src="{{ asset('public/assets/img/double_room.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/double_room.jpg') }}" class="img-responsive" alt="...">
                             <figcaption>
                                 <h3>Double room</h3>
                                 <div class="item__price">
@@ -369,7 +369,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <figure class="best-rooms__item">
-                            <img src="{{ asset('public/assets/img/deluxe_room.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/deluxe_room.jpg') }}" class="img-responsive" alt="...">
                             <figcaption>
                                 <h3>Deluxe room</h3>
                                 <div class="item__price">
@@ -382,7 +382,7 @@
                     </div>
                     <div class="col-sm-6">
                         <figure class="best-rooms__item">
-                            <img src="{{ asset('public/assets/img/royal_room.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/royal_room.jpg') }}" class="img-responsive" alt="...">
                             <figcaption>
                                 <h3>Royal room</h3>
                                 <div class="item__price">
@@ -478,62 +478,62 @@
                     <div id="gallery__carousel" class="owl-carousel owl-theme gallery__body">
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img1.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img1.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img1.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img2.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img2.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img2.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img3.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img3.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img3.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img4.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img4.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img4.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img5.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img5.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img5.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img6.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img6.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img6.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img7.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img7.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img7.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img8.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img8.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img8.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img9.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img9.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img9.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img10.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img10.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img10.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img11.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img11.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img11.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                         <div class="gallery__item">
                             <a href="assets/img/gallery_img12.jpg" data-lightbox="gallery" data-title="Your caption">
-                                <img src="{{ asset('public/assets/img/gallery_img12.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset('assets/img/gallery_img12.jpg') }}" class="img-responsive" alt="...">
                             </a>
                         </div> <!-- .gallery__item -->
                     </div> <!-- .gallery__body -->
@@ -564,7 +564,7 @@
                         <div class="testimonials__wrapper">
                             <div class="testimonials__item">
                                 <div class="testimonials__img">
-                                    <img src="{{ asset('public/assets/img/testimonials_img1.jpg') }}" class="img-responsive" alt="...">
+                                    <img src="{{ asset('assets/img/testimonials_img1.jpg') }}" class="img-responsive" alt="...">
                                 </div>
                                 <div class="testimonials__caption">
                                     <h3 class="testimonials_caption__name">John Doe</h3>
@@ -576,7 +576,7 @@
                         <div class="testimonials__wrapper">
                             <div class="testimonials__item">
                                 <div class="testimonials__img">
-                                    <img src="{{ asset('public/assets/img/testimonials_img2.jpg') }}" class="img-responsive" alt="...">
+                                    <img src="{{ asset('assets/img/testimonials_img2.jpg') }}" class="img-responsive" alt="...">
                                 </div>
                                 <div class="testimonials__caption">
                                     <h3 class="testimonials_caption__name">Maria Atkinson</h3>
@@ -588,7 +588,7 @@
                         <div class="testimonials__wrapper">
                             <div class="testimonials__item">
                                 <div class="testimonials__img">
-                                    <img src="{{ asset('public/assets/img/testimonials_img3.jpg') }}" class="img-responsive" alt="...">
+                                    <img src="{{ asset('assets/img/testimonials_img3.jpg') }}" class="img-responsive" alt="...">
                                 </div>
                                 <div class="testimonials__caption">
                                     <h3 class="testimonials_caption__name">Brad Pitt</h3>
@@ -600,7 +600,7 @@
                         <div class="testimonials__wrapper">
                             <div class="testimonials__item">
                                 <div class="testimonials__img">
-                                    <img src="{{ asset('public/assets/img/testimonials_img4.jpg') }}" class="img-responsive" alt="...">
+                                    <img src="{{ asset('assets/img/testimonials_img4.jpg') }}" class="img-responsive" alt="...">
                                 </div>
                                 <div class="testimonials__caption">
                                     <h3 class="testimonials_caption__name">Jessica Doe</h3>
@@ -612,7 +612,7 @@
                         <div class="testimonials__wrapper">
                             <div class="testimonials__item">
                                 <div class="testimonials__img">
-                                    <img src="{{ asset('public/assets/img/testimonials_img1.jpg') }}" class="img-responsive" alt="...">
+                                    <img src="{{ asset('assets/img/testimonials_img1.jpg') }}" class="img-responsive" alt="...">
                                 </div>
                                 <div class="testimonials__caption">
                                     <h3 class="testimonials_caption__name">Robert Jones</h3>
@@ -624,7 +624,7 @@
                         <div class="testimonials__wrapper">
                             <div class="testimonials__item">
                                 <div class="testimonials__img">
-                                    <img src="{{ asset('public/assets/img/testimonials_img4.jpg') }}" class="img-responsive" alt="...">
+                                    <img src="{{ asset('assets/img/testimonials_img4.jpg') }}" class="img-responsive" alt="...">
                                 </div>
                                 <div class="testimonials__caption">
                                     <h3 class="testimonials_caption__name">Melissa Portland</h3>
@@ -663,7 +663,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-pull-3">
                     <div class="events__item">
                         <div class="events-item__img">
-                            <img src="{{ asset('public/assets/img/events_img1.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/events_img1.jpg') }}" class="img-responsive" alt="...">
                         </div>
                         <div class="events-item__body">
                             <div class="events-item__header">
@@ -695,7 +695,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-pull-3">
                     <div class="events__item">
                         <div class="events-item__img">
-                            <img src="{{ asset('public/assets/img/events_img2.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/events_img2.jpg') }}" class="img-responsive" alt="...">
                         </div>
                         <div class="events-item__body">
                             <div class="events-item__header">
@@ -727,7 +727,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-lg-pull-3">
                     <div class="events__item">
                         <div class="events-item__img">
-                            <img src="{{ asset('public/assets/img/events_img3.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/events_img3.jpg') }}" class="img-responsive" alt="...">
                         </div>
                         <div class="events-item__body">
                             <div class="events-item__header">
@@ -766,7 +766,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="events__item ">
                         <div class="events-item__img">
-                            <img src="{{ asset('public/assets/img/events_img4.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/events_img4.jpg') }}" class="img-responsive" alt="...">
                         </div>
                         <div class="events-item__body">
                             <div class="events-item__header">
@@ -798,7 +798,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="events__item">
                         <div class="events-item__img">
-                            <img src="{{ asset('public/assets/img/events_img5.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/events_img5.jpg') }}" class="img-responsive" alt="...">
                         </div>
                         <div class="events-item__body">
                             <div class="events-item__header">
@@ -830,7 +830,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="events__item">
                         <div class="events-item__img">
-                            <img src="{{ asset('public/assets/img/events_img6.jpg') }}" class="img-responsive" alt="...">
+                            <img src="{{ asset('assets/img/events_img6.jpg') }}" class="img-responsive" alt="...">
                         </div>
                         <div class="events-item__body">
                             <div class="events-item__header">
@@ -1040,35 +1040,35 @@
     ================================================== -->
 
     <!-- JS Global -->
-    <script src="{{ asset('public/assets/plugins/jquery/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('public/assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/jquery/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
 
     <!-- JS Plugins -->
-    <script src="{{ asset('public/assets/plugins/moment-develop/moment.js') }}"></script>
-    <script src="{{ asset('public/assets/plugins/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js') }}"></script>
-    <script src="{{ asset('public/assets/plugins/waypoints/lib/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('public/assets/plugins/lightbox/dist/js/lightbox.min.js') }}"></script>
-    <script src="{{ asset('public/assets/plugins/owl-carousel/dist/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('public/assets/plugins/countTo/jquery.countTo.js') }}"></script>
-    <script src="{{ asset('public/assets/plugins/contact/contact.js') }}"></script>
+    <script src="{{ asset('assets/plugins/moment-develop/moment.js') }}"></script>
+    <script src="{{ asset('assets/plugins/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/waypoints/lib/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/lightbox/dist/js/lightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/owl-carousel/dist/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/countTo/jquery.countTo.js') }}"></script>
+    <script src="{{ asset('assets/plugins/contact/contact.js') }}"></script>
 
     <!-- JS Custom -->
     <!--build:js assets/js/theme.min.js -->
-    <script src="{{ asset('public/assets/js/theme.js') }}"></script>
+    <script src="{{ asset('assets/js/theme.js') }}"></script>
     <!-- endbuild -->
-    <script src="{{ asset('public/assets/js/google_maps.js') }}"></script>
+    <script src="{{ asset('assets/js/google_maps.js') }}"></script>
     <!-- Google Maps -->
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/jquery.themepunch.tools.min.js') }}"></script>
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/jquery.themepunch.revolution.min.js') }}"></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/jquery.themepunch.tools.min.js') }}"></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/jquery.themepunch.revolution.min.js') }}"></script>
 
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.video.min.js') }}"></script>
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.actions.min.js') }}"></script>
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.kenburn.min.js') }}"></script>
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.navigation.min.js') }}"></script>
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.migration.min.js') }}"></script>
-    <script src="{{ asset('public/plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.parallax.min.js') }}   "></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.video.min.js') }}"></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.actions.min.js') }}"></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.kenburn.min.js') }}"></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.navigation.min.js') }}"></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.migration.min.js') }}"></script>
+    <script src="{{ asset('plugins/rs-plugin-5.3.1/js/extensions/revolution.extension.parallax.min.js') }}   "></script>
     <script>
         var revapi1, tpj;
         (function() {
