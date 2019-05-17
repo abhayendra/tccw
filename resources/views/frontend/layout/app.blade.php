@@ -85,6 +85,8 @@
     </div> <!-- .container -->
 </div> <!-- .section__info -->
 
+
+
 <!-- Navbar
 ================================================== -->
 <nav class="navbar navbar-default">
@@ -103,8 +105,7 @@
 
             <!-- Logo -->
             <a class="navbar-brand" href="index.html">
-                <h3 class="navbar-brand__logo">Sunset Hotel</h3>
-                <p class="navbar-brand__sublogo">Grand</p>
+               <img src="{!! asset($settings['logo']) !!}">
             </a>
 
         </div> <!-- / .navbar-header -->
