@@ -1,6 +1,7 @@
 <?php
 namespace App\Helpers;
 use App\CmsSetting;
+use App\HomeSlider;
 use App\Menu;
 use App\PopularDestination;
 use App\UserLog;
@@ -14,7 +15,11 @@ use App\LanguageTranslation;
     {
 
          public static function slider() {
-             
+
+             $sliders = HomeSlider::where('status','1')
+                 ->get();
+             return $sliders;
+
          }
 
 

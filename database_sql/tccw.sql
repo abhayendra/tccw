@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2019 at 02:00 PM
+-- Generation Time: May 19, 2019 at 02:37 PM
 -- Server version: 5.6.37
 -- PHP Version: 7.1.8
 
@@ -472,10 +472,10 @@ CREATE TABLE IF NOT EXISTS `home_sections` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `home_slider`
+-- Table structure for table `home_sliders`
 --
 
-CREATE TABLE IF NOT EXISTS `home_slider` (
+CREATE TABLE IF NOT EXISTS `home_sliders` (
   `id` int(11) NOT NULL,
   `slider_image` varchar(200) NOT NULL,
   `position` int(11) NOT NULL,
@@ -485,10 +485,10 @@ CREATE TABLE IF NOT EXISTS `home_slider` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `home_slider`
+-- Dumping data for table `home_sliders`
 --
 
-INSERT INTO `home_slider` (`id`, `slider_image`, `position`, `status`, `created_at`, `updated_at`) VALUES
+INSERT INTO `home_sliders` (`id`, `slider_image`, `position`, `status`, `created_at`, `updated_at`) VALUES
 (1, 'uploads/1/2019-05/slide_bg_1.jpg', 1, 1, '2019-05-16 22:24:01', NULL),
 (2, 'uploads/1/2019-05/slide_bg_2.jpg', 2, 1, '2019-05-16 22:24:11', NULL),
 (3, 'uploads/1/2019-05/slide_bg_3.jpg', 3, 1, '2019-05-16 22:24:21', NULL);
@@ -660,9 +660,9 @@ ALTER TABLE `home_sections`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `home_slider`
+-- Indexes for table `home_sliders`
 --
-ALTER TABLE `home_slider`
+ALTER TABLE `home_sliders`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -767,9 +767,9 @@ ALTER TABLE `cms_users`
 ALTER TABLE `home_sections`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `home_slider`
+-- AUTO_INCREMENT for table `home_sliders`
 --
-ALTER TABLE `home_slider`
+ALTER TABLE `home_sliders`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `migrations`
