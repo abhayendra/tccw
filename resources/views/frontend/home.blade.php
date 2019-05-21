@@ -1,110 +1,13 @@
 @extends('frontend.layout.app')
 @section('content')
-<section class="section__home" id="section__home" style="display:none;">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="welcome__content">
 
-                    <!-- logo -->
-                    <h1 class="welcome_content__title">Sunset Hotel</h1>
-                    <p class="welcome_content__title-primary">grand</p>
-
-                    <div class="divider">
-                        <hr class="line1">
-                        <hr class="line2">
-                        <hr class="line1">
-                    </div> <!-- / .divider -->
-
-                    <p class="welcome_content__desc">In our hotel you will find everything you need to enjoy your vacation</p>
-
-                    <!-- button -->
-                    <a href="#section__about" class="btn btn-reservation">Explore it</a>
-
-                </div> <!-- .welcome__content -->
-            </div>
-        </div> <!-- / .row -->
-    </div> <!-- / .container -->
-    <!-- background image (insert via CSS) -->
-<div class="home__bg"></div>
-</section> <!-- / .section__home -->
-<!-- section availability -->
-<section class="section__availability" style="display:none;">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-
-                <!-- Reservation form -->
-                <form class="reservation__form">
-                    <div class="form-group">
-                        <div class="form-group__inner">
-                            <label for="reservation__check-in">Arrival date</label>
-                            <input type="text" class="form-control date" id="reservation__check-in" value="24 December 2017">
-                        </div> <!-- / .form-group__inner -->
-                    </div> <!-- / .form-group -->
-                    <div class="form-group">
-                        <div class="form-group__inner">
-                            <label for="reservation__check-out">Departure date</label>
-                            <input type="text" class="form-control date" id="reservation__check-out" value="12 January 2018">
-                        </div> <!-- / .form-group__inner -->
-                    </div> <!-- / .form-group -->
-                    <div class="form-group">
-                        <div class="form-group__inner">
-                            <label for="reservation__adults">Adults</label>
-                            <input type="text" id="reservation__adults">
-                            <div class="dropdown reservation-dropdown">
-                                <button class="dropdown-toggle" type="button" id="adults-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    <span>1 Adult</span>
-                                    <i class="icon ion-chevron-down"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="adults-dropdown">
-                                    <li><a href="#">1 Adult</a></li>
-                                    <li><a href="#">2 Adults</a></li>
-                                    <li><a href="#">3 Adults</a></li>
-                                </ul>
-                            </div> <!-- . -->
-                        </div> <!-- / .form-group__inner -->
-                    </div> <!-- / .form-group -->
-                    <div class="form-group">
-                        <div class="form-group__inner">
-                            <label for="reservation__children">Children</label>
-                            <input type="text" id="reservation__children">
-                            <div class="dropdown reservation-dropdown">
-                                <button class="dropdown-toggle" type="button" id="children-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                    <span>1 Child</span>
-                                    <i class="icon ion-chevron-down"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="children-dropdown">
-                                    <li><a href="#">1 Child</a></li>
-                                    <li><a href="#">2 Children</a></li>
-                                    <li><a href="#">3 Children</a></li>
-                                </ul>
-                            </div> <!-- . -->
-                        </div> <!-- / .form-group__inner -->
-                    </div> <!-- / .form-group -->
-                </form> <!-- / .reservation__form -->
-
-            </div>
-        </div> <!-- / .row -->
-        <div class="row">
-            <div class="col-xs-12">
-
-                <!-- Reservation button -->
-                <div class="reservation__button">
-                    <button type="submit" class="btn btn-reservation">Check availability</button>
-                </div> <!-- / .reservation__button -->
-
-            </div>
-        </div> <!-- / .row -->
-    </div> <!-- / .container -->
-</section> <!-- .section__availability -->
 
 <!-- section about -->
 <section class="section__about" id="section__about">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="section__title">Welcome to <strong>Sunset Hotel</strong></h2>
+                <h2 class="section__title">Once you become fearless, <strong> life becomes limitless. </strong></h2>
                 <div class="divider">
                     <hr class="line1">
                     <hr class="line2">
@@ -118,36 +21,37 @@
             <div class="section_about__content">
                 <div class="col-md-6">
                     <div class="about__pic">
-                        <img src="{{ asset('assets/img/about_img.jpg') }}" class="img-responsive" alt="...">
+                        <img src="{{ asset('assets/img/lisa.png') }}" class="img-responsive" alt="...">
                     </div> <!-- / .about__pic -->
                 </div>
                 <div class="col-md-6">
                     <div class="about__desc">
                         <p class="about_desc__subtitle">About us</p>
-                        <h3 class="about_desc__title">Probably the best place to enjoy your life</h3>
-                        <p class="about_desc__desc">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary.</p>
-                        <h4 class="about_desc__quote">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</h4>
-                        <a href="about.html" class="btn btn-default">Learn More</a>
+                        <h3 class="about_desc__title">I'm Lisa!</h3>
+                        <p class="about_desc__desc">Whatever your situation may be, investing in myself is the best thing I’ve done and the best thing that you can do for yourself. Having my own business has only been able to help me grow and develop and create relationships in a more meaningful way. I created The Confidence Crown to share my tips and tricks to getting into the business I’m in today! And I’m ready to teach you just how to do so.</p>
+                        <h3 class="about_desc__title">Are you ready for your crown?</h3>
+                        <h4 class="about_desc__quote">Keep scrolling down and be a part of the Confidence Crown community!</h4>
+                        <a href="{!! url("/") !!}" class="btn btn-default">Learn More</a>
                     </div> <!-- / .about__desc -->
                 </div>
             </div> <!-- / .section_about__content -->
         </div> <!-- / .row -->
     </div>
-
 </section> <!-- / .section__about -->
+
+
 
 <!-- section best-rooms -->
 <section class="section__best-rooms">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="section__title">Our <strong>Best rooms</strong></h2>
+                <h2 class="section__title">Be  <strong> #StrongHER </strong></h2>
                 <div class="divider">
                     <hr class="line1">
                     <hr class="line2">
                     <hr class="line1">
                 </div> <!-- / .divider -->
-                <p class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
             </div>
         </div> <!-- / .row -->
     </div> <!-- / .container -->
@@ -155,65 +59,13 @@
         <div class="best-rooms__content">
             <div class="row">
                 <div class="col-sm-6">
-                    <figure class="best-rooms__item">
-                        <img src="{{ asset('assets/img/single_room.jpg') }}" class="img-responsive" alt="...">
-                        <figcaption>
-                            <h3>Single room</h3>
-                            <div class="item__price">
-                                $50 <small>/ night</small>
-                            </div>
-                            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                            <a href="reservation.html" class="btn-book">Book now <i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></a>
-                        </figcaption>
-                    </figure> <!-- / .best-rooms__item -->
+                    <div class="">
+                        <img src="{{ asset('assets/img/book_square.png') }}" class="img-responsive" alt="...">
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <figure class="best-rooms__item">
-                        <img src="{{ asset('assets/img/double_room.jpg') }}" class="img-responsive" alt="...">
-                        <figcaption>
-                            <h3>Double room</h3>
-                            <div class="item__price">
-                                $135 <small>/ night</small>
-                            </div>
-                            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                            <a href="reservation.html" class="btn-book">Book now <i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></a>
-                        </figcaption>
-                    </figure> <!-- / .best-rooms__item -->
-                </div>
-            </div> <!-- / .row -->
-            <div class="row">
-                <div class="col-sm-6">
-                    <figure class="best-rooms__item">
-                        <img src="{{ asset('assets/img/deluxe_room.jpg') }}" class="img-responsive" alt="...">
-                        <figcaption>
-                            <h3>Deluxe room</h3>
-                            <div class="item__price">
-                                $240 <small>/ night</small>
-                            </div>
-                            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis.</p>
-                            <a href="reservation.html" class="btn-book">Book now <i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></a>
-                        </figcaption>
-                    </figure> <!-- / .best-rooms__item -->
-                </div>
-                <div class="col-sm-6">
-                    <figure class="best-rooms__item">
-                        <img src="{{ asset('assets/img/royal_room.jpg') }}" class="img-responsive" alt="...">
-                        <figcaption>
-                            <h3>Royal room</h3>
-                            <div class="item__price">
-                                $320 <small>/ night</small>
-                            </div>
-                            <p class="item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illum modi explicabo obcaecati odit, omnis quis alias.</p>
-                            <a href="reservation.html" class="btn-book">Book now <i class="icon ion-chevron-right"></i><i class="icon ion-chevron-right"></i></a>
-                        </figcaption>
-                    </figure> <!-- / .best-rooms__item -->
-                </div>
-            </div> <!-- / .row -->
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="rooms__button">
-                        <a href="rooms-1.html" class="btn">See all rooms</a>
-                    </div> <!-- / .rooms__button -->
+                <div class="col-sm-6" style="text-align:center; ">
+                    <h4 class="about_desc__quote" style="font-size:70px; padding-top:30%; ">Be <br/> #StrongHER</h4>
+                    <a href="{!! url("/") !!}" class="btn btn-default">Buy my new book now </a>
                 </div>
             </div> <!-- / .row -->
         </div> <!-- / .best-rooms__content -->

@@ -2,7 +2,6 @@
 @php
     $sliders = \App\Helpers\Helper::slider();
 @endphp
-
 <section class="section__home" id="section__home">
     <div id="Wrapper">
         <div id="Header_wrapper">
