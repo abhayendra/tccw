@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2019 at 02:37 PM
+-- Generation Time: May 22, 2019 at 01:50 PM
 -- Server version: 5.6.37
 -- PHP Version: 7.1.8
 
@@ -139,7 +139,7 @@ CREATE TABLE IF NOT EXISTS `cms_logs` (
   `id_cms_users` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `cms_logs`
@@ -176,7 +176,19 @@ INSERT INTO `cms_logs` (`id`, `ipaddress`, `useragent`, `url`, `description`, `d
 (28, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/home_slider/add-save', 'Add New Data  at Home Slider', '', 1, '2019-05-16 22:24:01', NULL),
 (29, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/home_slider/add-save', 'Add New Data  at Home Slider', '', 1, '2019-05-16 22:24:11', NULL),
 (30, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/home_slider/add-save', 'Add New Data  at Home Slider', '', 1, '2019-05-16 22:24:21', NULL),
-(31, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/login', 'admin@admin.com login with IP Address ::1', '', 1, '2019-05-19 08:13:48', NULL);
+(31, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/login', 'admin@admin.com login with IP Address ::1', '', 1, '2019-05-19 08:13:48', NULL),
+(32, '122.160.25.201', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0', 'http://122.160.25.201/tccw/admin/login', 'admin@admin.com login with IP Address 122.160.25.201', '', 1, '2019-05-20 07:03:08', NULL),
+(33, '122.160.25.201', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0', 'http://122.160.25.201/tccw/admin/menu_management/edit-save/5', 'Update data Setting at Menu Management', '<table class="table table-striped"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>path</td><td>http://localhost/tccw/admin/settings/show?group=Application+Setting&m=0</td><td>22.160.25.201/tccw/admin/settings/show?group=Application+Setting&m=0</td></tr><tr><td>sorting</td><td>4</td><td></td></tr></tbody></table>', 1, '2019-05-20 07:04:04', NULL),
+(34, '122.160.25.201', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0', 'http://122.160.25.201/tccw/admin/menu_management/edit-save/5', 'Update data Setting at Menu Management', '<table class="table table-striped"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>path</td><td>22.160.25.201/tccw/admin/settings/show?group=Application+Setting&m=0</td><td>http://122.160.25.201/tccw/admin/settings/show?group=Application+Setting&m=0</td></tr><tr><td>sorting</td><td>4</td><td></td></tr></tbody></table>', 1, '2019-05-20 07:05:29', NULL),
+(35, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/login', 'admin@admin.com login with IP Address ::1', '', 1, '2019-05-20 14:00:26', NULL),
+(36, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/home_sections/add-save', 'Add New Data Test Only at Home Section', '', 1, '2019-05-20 14:05:30', NULL),
+(37, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/login', 'admin@admin.com login with IP Address ::1', '', 1, '2019-05-20 22:59:20', NULL),
+(38, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/home_sections/delete/1', 'Delete data Test Only at Home Section', '', 1, '2019-05-20 22:59:30', NULL),
+(39, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/home_sections/add-save', 'Add New Data Once you become fearless, <strong> life becomes limitless. </strong> at Home Section', '', 1, '2019-05-20 23:02:00', NULL),
+(40, '::1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://localhost/tccw/admin/home_sections/add-save', 'Add New Data Be  <strong> #StrongHER </strong> at Home Section', '', 1, '2019-05-20 23:03:20', NULL),
+(41, '139.167.184.210', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://122.160.25.201/tccw/admin/login', 'admin@admin.com login with IP Address 139.167.184.210', '', 1, '2019-05-21 11:17:50', NULL),
+(42, '139.167.184.210', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://122.160.25.201/tccw/admin/settings/edit-save/22', 'Update data  at Settings', '<table class="table table-striped"><thead><tr><th>Key</th><th>Old Value</th><th>New Value</th></thead><tbody><tr><td>name</td><td>g_plus</td><td></td></tr><tr><td>content</td><td>googleplus</td><td></td></tr><tr><td>dataenum</td><td></td><td></td></tr><tr><td>helper</td><td></td><td></td></tr><tr><td>label</td><td>G-plus</td><td>Google Plus</td></tr></tbody></table>', 1, '2019-05-21 11:34:28', NULL),
+(43, '183.83.174.36', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36', 'http://122.160.25.201/tccw/admin/login', 'admin@admin.com login with IP Address 183.83.174.36', '', 1, '2019-05-22 06:57:43', NULL);
 
 -- --------------------------------------------------------
 
@@ -208,7 +220,7 @@ INSERT INTO `cms_menus` (`id`, `name`, `type`, `path`, `color`, `icon`, `parent_
 (2, 'Home Slider', 'Route', 'AdminHomeSliderControllerGetIndex', NULL, 'fa fa-th-list', 0, 1, 0, 1, 1, '2019-05-16 21:52:48', NULL),
 (3, 'Testimonial', 'Route', 'AdminTestimonialControllerGetIndex', NULL, 'fa fa-bookmark', 0, 1, 0, 1, 3, '2019-05-16 21:56:14', NULL),
 (4, 'Home Section', 'Route', 'AdminHomeSectionsControllerGetIndex', NULL, 'fa fa-list-alt', 0, 1, 0, 1, 2, '2019-05-16 22:02:58', NULL),
-(5, 'Setting', 'URL', 'http://localhost/tccw/admin/settings/show?group=Application+Setting&m=0', 'normal', 'fa fa-gears', 0, 1, 0, 1, 4, '2019-05-16 22:17:09', '2019-05-16 22:19:10');
+(5, 'Setting', 'URL', 'http://122.160.25.201/tccw/admin/settings/show?group=Application+Setting&m=0', 'normal', 'fa fa-gears', 0, 1, 0, 1, 4, '2019-05-16 22:17:09', '2019-05-20 07:05:29');
 
 -- --------------------------------------------------------
 
@@ -220,7 +232,7 @@ CREATE TABLE IF NOT EXISTS `cms_menus_privileges` (
   `id` int(10) unsigned NOT NULL,
   `id_cms_menus` int(11) DEFAULT NULL,
   `id_cms_privileges` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `cms_menus_privileges`
@@ -231,7 +243,7 @@ INSERT INTO `cms_menus_privileges` (`id`, `id_cms_menus`, `id_cms_privileges`) V
 (2, 2, 1),
 (3, 3, 1),
 (4, 4, 1),
-(9, 5, 1);
+(11, 5, 1);
 
 -- --------------------------------------------------------
 
@@ -269,7 +281,7 @@ INSERT INTO `cms_moduls` (`id`, `name`, `icon`, `path`, `table_name`, `controlle
 (9, 'Statistic Builder', 'fa fa-dashboard', 'statistic_builder', 'cms_statistics', 'StatisticBuilderController', 1, 1, '2019-05-08 00:55:52', NULL, NULL),
 (10, 'API Generator', 'fa fa-cloud-download', 'api_generator', '', 'ApiCustomController', 1, 1, '2019-05-08 00:55:52', NULL, NULL),
 (11, 'Log User Access', 'fa fa-flag-o', 'logs', 'cms_logs', 'LogsController', 1, 1, '2019-05-08 00:55:52', NULL, NULL),
-(12, 'Home Slider', 'fa fa-th-list', 'home_slider', 'home_slider', 'AdminHomeSliderController', 0, 0, '2019-05-16 21:52:48', NULL, NULL),
+(12, 'Home Slider', 'fa fa-th-list', 'home_sliders', 'home_sliders', 'AdminHomeSliderController', 0, 0, '2019-05-16 21:52:48', NULL, NULL),
 (13, 'Testimonial', 'fa fa-bookmark', 'testimonial', 'testimonial', 'AdminTestimonialController', 0, 0, '2019-05-16 21:56:14', NULL, NULL),
 (14, 'Home Section', 'fa fa-list-alt', 'home_sections', 'home_sections', 'AdminHomeSectionsController', 0, 0, '2019-05-16 22:02:58', NULL, NULL);
 
@@ -384,16 +396,16 @@ INSERT INTO `cms_settings` (`id`, `name`, `content`, `content_input_type`, `data
 (8, 'smtp_username', 'd508b999f2355c', 'text', NULL, NULL, '2019-05-08 00:55:52', NULL, 'Email Setting', 'SMTP Username'),
 (9, 'smtp_password', '55b60f105ac43c', 'text', NULL, NULL, '2019-05-08 00:55:52', NULL, 'Email Setting', 'SMTP Password'),
 (10, 'appname', 'TCCW', 'text', NULL, NULL, '2019-05-08 00:55:52', NULL, 'Application Setting', 'Application Name'),
-(12, 'logo', 'uploads/2019-05/e6843311930c93066e8bda6285ea09fb.png', 'upload_image', NULL, NULL, '2019-05-08 00:55:52', NULL, 'Application Setting', 'Logo'),
-(13, 'favicon', 'uploads/2019-05/46e2a363465d20c2dcb633ce561b4cae.png', 'upload_image', NULL, NULL, '2019-05-08 00:55:52', NULL, 'Application Setting', 'Favicon'),
-(17, 'address', '29 Land St, Lorem City, CA', 'text', NULL, NULL, '2019-05-13 12:43:56', NULL, 'Application Setting', 'Address'),
+(12, 'logo', 'uploads/2019-05/cbd6999a44fe5566338cb77ca7d7920c.png', 'upload_image', NULL, NULL, '2019-05-08 00:55:52', NULL, 'Application Setting', 'Logo'),
+(13, 'favicon', 'uploads/2019-05/da6cfdb50ed64b7ae799a1c7633a624f.JPG', 'upload_image', NULL, NULL, '2019-05-08 00:55:52', NULL, 'Application Setting', 'Favicon'),
+(17, 'address', '29 Land St, Lorem City, Itly', 'text', NULL, NULL, '2019-05-13 12:43:56', NULL, 'Application Setting', 'Address'),
 (18, 'email', 'er.abhayendra@gmail.com', 'email', NULL, NULL, '2019-05-13 12:44:07', NULL, 'Application Setting', 'Email'),
 (19, 'phone', '+91-9999999999', 'text', NULL, NULL, '2019-05-13 12:44:25', NULL, 'Application Setting', 'phone'),
-(20, 'facebook', '#', 'text', NULL, NULL, '2019-05-13 12:45:54', NULL, 'Application Setting', 'Facebook'),
-(21, 'twitter', '#', 'text', NULL, NULL, '2019-05-13 12:46:05', NULL, 'Application Setting', 'Twitter'),
-(22, 'g_plus', '#', 'text', NULL, NULL, '2019-05-13 12:46:15', NULL, 'Application Setting', 'G-plus'),
-(23, 'youtube', '#', 'text', NULL, NULL, '2019-05-13 12:46:24', NULL, 'Application Setting', 'Youtube'),
-(24, 'instagram', '#', 'text', NULL, NULL, '2019-05-13 12:47:17', NULL, 'Application Setting', 'Instagram');
+(20, 'facebook', 'Facebook', 'text', NULL, NULL, '2019-05-13 12:45:54', NULL, 'Application Setting', 'Facebook'),
+(21, 'twitter', 'Twitter', 'text', NULL, NULL, '2019-05-13 12:46:05', NULL, 'Application Setting', 'Twitter'),
+(22, 'g_plus', 'googleplus', 'text', NULL, NULL, '2019-05-13 12:46:15', '2019-05-21 11:34:28', 'Application Setting', 'Google Plus'),
+(23, 'youtube', 'Youtube', 'text', NULL, NULL, '2019-05-13 12:46:24', NULL, 'Application Setting', 'Youtube'),
+(24, 'instagram', 'Instagram', 'text', NULL, NULL, '2019-05-13 12:47:17', NULL, 'Application Setting', 'Instagram');
 
 -- --------------------------------------------------------
 
@@ -467,7 +479,15 @@ CREATE TABLE IF NOT EXISTS `home_sections` (
   `status` int(11) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `home_sections`
+--
+
+INSERT INTO `home_sections` (`id`, `title`, `subtitle`, `content`, `status`, `created_at`, `updated_at`) VALUES
+(2, 'Once you become fearless, <strong> life becomes limitless. </strong>', 'null', '<div class="container-fluid">\r\n        <div class="row">\r\n            <div class="section_about__content">\r\n                <div class="col-md-6">\r\n                    <div class="about__pic">\r\n                        <img src="http://localhost/tccw/public/assets/img/lisa.png" class="img-responsive" alt="...">\r\n                    </div> <!-- / .about__pic -->\r\n                </div>\r\n                <div class="col-md-6">\r\n                    <div class="about__desc">\r\n                        <p class="about_desc__subtitle">About us</p>\r\n                        <h3 class="about_desc__title">I''m Lisa!</h3>\r\n                        <p class="about_desc__desc">Whatever your situation may be, investing in myself is the best thing I’ve done and the best thing that you can do for yourself. Having my own business has only been able to help me grow and develop and create relationships in a more meaningful way. I created The Confidence Crown to share my tips and tricks to getting into the business I’m in today! And I’m ready to teach you just how to do so.</p>\r\n                        <h3 class="about_desc__title">Are you ready for your crown?</h3>\r\n                        <h4 class="about_desc__quote">Keep scrolling down and be a part of the Confidence Crown community!</h4>\r\n                        <a href="http://localhost/tccw" class="btn btn-default">Learn More</a>\r\n                    </div> <!-- / .about__desc -->\r\n                </div>\r\n            </div> <!-- / .section_about__content -->\r\n        </div> <!-- / .row -->\r\n    </div>', 1, '2019-05-20 23:02:00', NULL),
+(3, 'Be  <strong> #StrongHER </strong>', '', '<section class="section__best-rooms">\r\n    <div class="container">\r\n        <div class="row">\r\n            <div class="col-sm-12">\r\n                <h2 class="section__title">Be  <strong> #StrongHER </strong></h2>\r\n                <div class="divider">\r\n                    <hr class="line1">\r\n                    <hr class="line2">\r\n                    <hr class="line1">\r\n                </div> <!-- / .divider -->\r\n            </div>\r\n        </div> <!-- / .row -->\r\n    </div> <!-- / .container -->\r\n    <div class="container">\r\n        <div class="best-rooms__content">\r\n            <div class="row">\r\n                <div class="col-sm-6">\r\n                    <div class="">\r\n                        <img src="http://localhost/tccw/public/assets/img/book_square.png" class="img-responsive" alt="...">\r\n                    </div>\r\n                </div>\r\n                <div class="col-sm-6" style="text-align:center; ">\r\n                    <h4 class="about_desc__quote" style="font-size:70px; padding-top:30%; ">Be <br> #StrongHER</h4>\r\n                    <a href="http://localhost/tccw" class="btn btn-default">Buy my new book now </a>\r\n                </div>\r\n            </div> <!-- / .row -->\r\n        </div> <!-- / .best-rooms__content -->\r\n    </div> <!-- / .container -->\r\n</section>', 1, '2019-05-20 23:03:20', NULL);
 
 -- --------------------------------------------------------
 
@@ -710,7 +730,7 @@ ALTER TABLE `cms_email_templates`
 -- AUTO_INCREMENT for table `cms_logs`
 --
 ALTER TABLE `cms_logs`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=32;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=44;
 --
 -- AUTO_INCREMENT for table `cms_menus`
 --
@@ -720,7 +740,7 @@ ALTER TABLE `cms_menus`
 -- AUTO_INCREMENT for table `cms_menus_privileges`
 --
 ALTER TABLE `cms_menus_privileges`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `cms_moduls`
 --
@@ -765,7 +785,7 @@ ALTER TABLE `cms_users`
 -- AUTO_INCREMENT for table `home_sections`
 --
 ALTER TABLE `home_sections`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `home_sliders`
 --
