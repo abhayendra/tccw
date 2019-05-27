@@ -113,40 +113,19 @@
         <!-- Links -->
         <div class="collapse navbar-collapse" id="navbar__collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <i class="icon ion-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li class="active"><a href="index.html">Home static image</a></li>
-                        <li><a href="index-parallax.html">Home Parallax</a></li>
-                        <li><a href="index-slider.html">Home Slider</a></li>
-                        <li><a href="index-video.html">Home Video</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html">About us</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms <i class="icon ion-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="rooms-1.html">Rooms 1</a></li>
-                        <li><a href="rooms-2.html">Rooms 2</a></li>
-                        <li><a href="room-detail.html">Room detail</a></li>
-                    </ul>
-                </li>
+                @php $leftMenu=\App\Helpers\Helper::leftMenu();    @endphp
+                @foreach($leftMenu as $lm)
+                <li><a href="{!! url($lm->page_slug) !!}">{!! $lm->name !!}</a></li>
+                @endforeach
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="reservation.html">Reservation</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="icon ion-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="gallery-fullwidth.html">Gallery full width</a></li>
-                        <li><a href="gallery-boxed.html">Gallery boxed</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-item.html">Blog Item</a></li>
-                        <li><a href="404page.html">404 Page</a></li>
-                    </ul>
-                </li>
-                <li><a href="contacts.html">Contacts</a></li>
+                @php $rightMenu=\App\Helpers\Helper::rightMenu();  @endphp
+                @foreach($rightMenu as $rm)
+                <li><a href="{!! url($rm->page_slug) !!}">{!! $rm->name !!}</a></li>
+                @endforeach
             </ul>
         </div><!-- /.navbar-collapse -->
+
 
     </div><!-- /.container -->
 </nav>
@@ -156,8 +135,10 @@
 
 <!-- section home -->
 
-
+@if($_SERVER['REQUEST_URI']=="/" || $_SERVER['REQUEST_URI']=="/tccw/")
 @include('frontend.layout.slider')
+@endif
+
 
 @yield('content')
 

@@ -5,12 +5,12 @@
 	use DB;
 	use CRUDBooster;
 
-	class AdminHomeSliderController extends \crocodicstudio\crudbooster\controllers\CBController {
+	class AdminMenuesController extends \crocodicstudio\crudbooster\controllers\CBController {
 
 	    public function cbInit() {
 
 			# START CONFIGURATION DO NOT REMOVE THIS LINE
-			$this->title_field = "id";
+			$this->title_field = "name";
 			$this->limit = "20";
 			$this->orderby = "id,desc";
 			$this->global_privilege = false;
@@ -25,28 +25,34 @@
 			$this->button_filter = true;
 			$this->button_import = true;
 			$this->button_export = true;
-			$this->table = "home_sliders";
+			$this->table = "menues";
 			# END CONFIGURATION DO NOT REMOVE THIS LINE
 
 			# START COLUMNS DO NOT REMOVE THIS LINE
 			$this->col = [];
-			$this->col[] = ["label"=>"Slider Image","name"=>"slider_image","image"=>true];
+			$this->col[] = ["label"=>"Name","name"=>"name"];
+			$this->col[] = ["label"=>"Page","name"=>"page_slug"];
 			$this->col[] = ["label"=>"Position","name"=>"position"];
+			$this->col[] = ["label"=>"Menu Order","name"=>"menu_order"];
 			$this->col[] = ["label"=>"Status","name"=>"status"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Slider Image','name'=>'slider_image','type'=>'upload','validation'=>'required|image','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Position','name'=>'position','type'=>'select','validation'=>'required|integer|min:0','width'=>'col-sm-10','dataenum'=>'1;2;3;4;5;6;7;8;9;10'];
-			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'radio','validation'=>'required|integer|min:0','width'=>'col-sm-10','dataenum'=>'1|Active; 0|Inactive'];
+			$this->form[] = ['label'=>'Name','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'You can only enter the letter only'];
+			$this->form[] = ['label'=>'Page Title','name'=>'page_slug','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'pages,slug'];
+			$this->form[] = ['label'=>'Position','name'=>'position','type'=>'select','validation'=>'required|min:1|max:255','width'=>'col-sm-10','dataenum'=>'Left;Right'];
+			$this->form[] = ['label'=>'Menu Order','name'=>'menu_order','type'=>'select','validation'=>'required|integer|min:0','width'=>'col-sm-10','dataenum'=>'1;2;3;4;5;6;7;8;9;'];
+			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'radio','validation'=>'required','width'=>'col-sm-10','dataenum'=>'1|Active;0|Inactive'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
-			//$this->form[] = ['label'=>'Slider Image','name'=>'slider_image','type'=>'upload','validation'=>'required|image','width'=>'col-sm-10'];
-			//$this->form[] = ['label'=>'Position','name'=>'position','type'=>'select','validation'=>'required|integer|min:0','width'=>'col-sm-10','dataenum'=>'1;2;3;4;5;6;7;8;9;10;'];
-			//$this->form[] = ['label'=>'Status','name'=>'status','type'=>'radio','validation'=>'required|integer|min:0','width'=>'col-sm-10','dataenum'=>'1|Active; 0|Inactive'];
+			//$this->form[] = ['label'=>'Name','name'=>'name','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'You can only enter the letter only'];
+			//$this->form[] = ['label'=>'Page Title','name'=>'page_id','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'pages,title'];
+			//$this->form[] = ['label'=>'Position','name'=>'position','type'=>'select','validation'=>'required|min:1|max:255','width'=>'col-sm-10','dataenum'=>'Left;Right'];
+			//$this->form[] = ['label'=>'Menu Order','name'=>'menu_order','type'=>'select','validation'=>'required|integer|min:0','width'=>'col-sm-10','dataenum'=>'1;2;3;4;5;6;7;8;9;'];
+			//$this->form[] = ['label'=>'Status','name'=>'status','type'=>'radio','validation'=>'required','width'=>'col-sm-10','dataenum'=>'1|Active;0|Inactive'];
 			# OLD END FORM
 
 			/*

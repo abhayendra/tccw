@@ -15,12 +15,22 @@ use App\LanguageTranslation;
     {
 
          public static function slider() {
-
              $sliders = HomeSlider::where('status','1')
                  ->get();
              return $sliders;
+         }
+
+         public static function leftMenu() {
+             return $leftMenu = Menu::where('position','Left')->where('status',1)->get();
 
          }
+
+        public static function rightMenu() {
+            return $rightMenu = Menu::where('position','Right')->where('status',1)->get();
+        }
+
+
+
 
 
     }

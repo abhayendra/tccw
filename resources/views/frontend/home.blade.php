@@ -1,7 +1,5 @@
 @extends('frontend.layout.app')
 @section('content')
-
-
 <!-- section about -->
 <section class="section__about" id="section__about">
     <div class="container">
@@ -71,58 +69,6 @@
         </div> <!-- / .best-rooms__content -->
     </div> <!-- / .container -->
 </section> <!-- / .section__best-rooms -->
-
-<!-- section services -->
-<section class="section__services">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="services__item">
-                    <h2 class="services_item__title">Parking</h2>
-                    <div class="services_item__divider">
-                        <i class="icon ion-android-star"></i>
-                        <i class="icon ion-android-star"></i>
-                        <i class="icon ion-android-star"></i>
-                    </div> <!-- .services_item__divider -->
-                    <p class="services_item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel temporibus adipisci mollitia ducimus facilis nesciunt at minima magni optio, dignissimos, neque dolore iste labore dolor enim, ipsam quisquam, quae nihil!</p>
-                </div> <!-- .services__item -->
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="services__item">
-                    <h2 class="services_item__title">Fitness hall</h2>
-                    <div class="services_item__divider">
-                        <i class="icon ion-android-star"></i>
-                        <i class="icon ion-android-star"></i>
-                        <i class="icon ion-android-star"></i>
-                    </div> <!-- .services_item__divider -->
-                    <p class="services_item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi eaque, eum. Voluptates corporis tenetur commodi nihil velit perspiciatis natus fugit rerum nisi, at, voluptas autem quisquam reprehenderit odit dolores quas!</p>
-                </div> <!-- .services__item -->
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="services__item">
-                    <h2 class="services_item__title">Restaurant</h2>
-                    <div class="services_item__divider">
-                        <i class="icon ion-android-star"></i>
-                        <i class="icon ion-android-star"></i>
-                        <i class="icon ion-android-star"></i>
-                    </div> <!-- .services_item__divider -->
-                    <p class="services_item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nesciunt ullam porro ipsa, architecto, doloribus illo veritatis consequatur temporibus eveniet labore, vitae laudantium possimus placeat libero magnam.</p>
-                </div> <!-- .services__item -->
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="services__item">
-                    <h2 class="services_item__title">Spa center</h2>
-                    <div class="services_item__divider">
-                        <i class="icon ion-android-star"></i>
-                        <i class="icon ion-android-star"></i>
-                        <i class="icon ion-android-star"></i>
-                    </div> <!-- .services_item__divider -->
-                    <p class="services_item__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed animi voluptates, laudantium aspernatur, libero nulla ut. Quibusdam distinctio eaque cum officia expedita dolore, perspiciatis quisquam vel et neque tempora cupiditate.</p>
-                </div> <!-- .services__item -->
-            </div>
-        </div> <!-- / .row -->
-    </div> <!-- / .container -->
-</section> <!-- / .section__services -->
 
 <!-- section gallery -->
 <section class="section__gallery">
@@ -220,7 +166,7 @@
                     <hr class="line2">
                     <hr class="line1">
                 </div> <!-- / .divider -->
-                <p class="section__subtitle testimonials__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti sit dicta quae natus quasi ratione quis id, tenetur atque blanditiis aperiam.</p>
+                <p class="section__subtitle testimonials__subtitle"></p>
             </div>
         </div> <!-- / .row -->
     </div> <!-- / .container -->
@@ -228,78 +174,20 @@
         <div class="row">
             <div class="col-xs-12">
                 <div id="testimonials__carousel" class="owl-carousel owl-theme testimonials__body">
+                    @foreach($testimonial as $t)
                     <div class="testimonials__wrapper">
                         <div class="testimonials__item">
                             <div class="testimonials__img">
-                                <img src="{{ asset('assets/img/testimonials_img1.jpg') }}" class="img-responsive" alt="...">
+                                <img src="{{ asset($t->image) }}" class="img-responsive" alt="{!! $t->name !!}">
                             </div>
                             <div class="testimonials__caption">
-                                <h3 class="testimonials_caption__name">John Doe</h3>
-                                <p class="testimonials_caption__prof">Photographer</p>
-                                <p class="testimonials_caption__text">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me.</p>
+                                <h3 class="testimonials_caption__name">{!! $t->name !!}</h3>
+                                <p class="testimonials_caption__prof">{!! $t->designation !!}</p>
+                                <p class="testimonials_caption__text">{!! $t->content !!}</p>
                             </div> <!-- .testimonials__caption -->
                         </div> <!-- .testimonials__item -->
                     </div><!-- .testimonials__wrapper -->
-                    <div class="testimonials__wrapper">
-                        <div class="testimonials__item">
-                            <div class="testimonials__img">
-                                <img src="{{ asset('assets/img/testimonials_img2.jpg') }}" class="img-responsive" alt="...">
-                            </div>
-                            <div class="testimonials__caption">
-                                <h3 class="testimonials_caption__name">Maria Atkinson</h3>
-                                <p class="testimonials_caption__prof">Writer</p>
-                                <p class="testimonials_caption__text">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me.</p>
-                            </div> <!-- .testimonials__caption -->
-                        </div> <!-- .testimonials__item -->
-                    </div><!-- .testimonials__wrapper -->
-                    <div class="testimonials__wrapper">
-                        <div class="testimonials__item">
-                            <div class="testimonials__img">
-                                <img src="{{ asset('assets/img/testimonials_img3.jpg') }}" class="img-responsive" alt="...">
-                            </div>
-                            <div class="testimonials__caption">
-                                <h3 class="testimonials_caption__name">Brad Pitt</h3>
-                                <p class="testimonials_caption__prof">Actor</p>
-                                <p class="testimonials_caption__text">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me.</p>
-                            </div> <!-- .testimonials__caption -->
-                        </div> <!-- .testimonials__item -->
-                    </div><!-- .testimonials__wrapper -->
-                    <div class="testimonials__wrapper">
-                        <div class="testimonials__item">
-                            <div class="testimonials__img">
-                                <img src="{{ asset('assets/img/testimonials_img4.jpg') }}" class="img-responsive" alt="...">
-                            </div>
-                            <div class="testimonials__caption">
-                                <h3 class="testimonials_caption__name">Jessica Doe</h3>
-                                <p class="testimonials_caption__prof">Singer</p>
-                                <p class="testimonials_caption__text">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me.</p>
-                            </div> <!-- .testimonials__caption -->
-                        </div> <!-- .testimonials__item -->
-                    </div><!-- .testimonials__wrapper -->
-                    <div class="testimonials__wrapper">
-                        <div class="testimonials__item">
-                            <div class="testimonials__img">
-                                <img src="{{ asset('assets/img/testimonials_img1.jpg') }}" class="img-responsive" alt="...">
-                            </div>
-                            <div class="testimonials__caption">
-                                <h3 class="testimonials_caption__name">Robert Jones</h3>
-                                <p class="testimonials_caption__prof">Art Director</p>
-                                <p class="testimonials_caption__text">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me.</p>
-                            </div> <!-- .testimonials__caption -->
-                        </div> <!-- .testimonials__item -->
-                    </div><!-- .testimonials__wrapper -->
-                    <div class="testimonials__wrapper">
-                        <div class="testimonials__item">
-                            <div class="testimonials__img">
-                                <img src="{{ asset('assets/img/testimonials_img4.jpg') }}" class="img-responsive" alt="...">
-                            </div>
-                            <div class="testimonials__caption">
-                                <h3 class="testimonials_caption__name">Melissa Portland</h3>
-                                <p class="testimonials_caption__prof">Designer</p>
-                                <p class="testimonials_caption__text">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me.</p>
-                            </div> <!-- .testimonials__caption -->
-                        </div> <!-- .testimonials__item -->
-                    </div><!-- .testimonials__wrapper -->
+                    @endforeach
                 </div> <!-- .testimonials__body -->
             </div>
         </div> <!-- / .row -->

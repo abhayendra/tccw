@@ -14,3 +14,4 @@
 
 
 Route::get('/','FrontendController@index');
+Route::get('/p/{slug}','FrontendController@page');
